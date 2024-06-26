@@ -1,0 +1,253 @@
+.casillas {
+    position: relative;
+    width: 450px;  /* Ajusta según sea necesario */
+    height: 390px; /* Ajusta según sea necesario */
+    margin: 0 auto;
+}
+
+.casilla {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.arcanoId {
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    z-index: 3; /* Colocar encima del objeto y la base */
+}
+
+/* Posicionamiento específico de los arcanos */
+#arcanoId0 {
+    top: 130px;
+    left: 177px;
+}
+#arcanoId1 {
+    top: 27px; 
+    left: 110px;  
+}
+#arcanoId2 {
+    top:27px;
+    left: 237px;
+}
+#arcanoId3 {
+    top: 130px;
+    left: 297px;
+}
+#arcanoId4 {
+    top: 232px;
+    left: 237px;
+}
+#arcanoId5 {
+    top: 232px;
+    left: 110px;
+}
+#arcanoId6 {
+    top: 130px;
+    left: 45px;
+}
+/* Posicionamiento específico de las casillas */
+#casilla0 {
+    top: 103px;
+    left: 143px;
+    z-index: 1; /* Colocar debajo del objeto y arcano */
+}
+
+#casilla1 {
+    top: 0px;
+    left: 80px;
+}
+
+#casilla2 {
+    top: 0px;
+    left: 207px;
+}
+
+#casilla3 {
+    top: 103px;
+    left: 267px;
+}
+
+#casilla4 {
+    top: 205px;
+    left: 207px;
+}
+
+#casilla5 {
+    top: 205px;
+    left: 80px;
+}
+
+#casilla6 {
+    top: 103px;
+    left: 15px;
+}
+
+#inicio0 {
+    top: 103px;
+    left: 143px;
+    z-index: 1; /* Colocar debajo del objeto y arcano */
+}
+
+#inicio1 {
+    top: 0px;
+    left: 80px;
+}
+
+#inicio2 {
+    top: 0px;
+    left: 207px;
+}
+
+#inicio3 {
+    top: 103px;
+    left: 267px;
+}
+
+#inicio4 {
+    top: 205px;
+    left: 207px;
+}
+
+#inicio5 {
+    top: 205px;
+    left: 80px;
+}
+
+#inicio6 {
+    top: 103px;
+    left: 15px;
+}
+
+#misteriosa0 {
+    top: 103px;
+    left: 143px;
+    z-index: 2; /* Colocar encima de la base, pero debajo del arcano */
+}
+
+#misteriosa1 {
+    top: -5px;
+    left: 80px;
+}
+
+#misteriosa2 {
+    top: -5px;
+    left: 207px;
+}
+
+#misteriosa3 {
+    top: 103px;
+    left: 267px;
+}
+
+#misteriosa4 {
+    top: 205px;
+    left: 207px;
+}
+
+#misteriosa5 {
+    top: 205px;
+    left: 80px;
+}
+
+#misteriosa6 {
+    top: 103px;
+    left: 15px;
+}
+
+#polvo1 {
+    top: 20px;
+    left: 100px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#polvo2 {
+    top: 20px;
+    left: 226px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#polvo3 {
+    top: 123px;
+    left: 287px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#polvo4 {
+    top: 225px;
+    left: 226px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#polvo5 {
+    top: 225px;
+    left: 100px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#polvo6 {
+    top: 123px;
+    left: 35px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#estrella1 {
+    top: 20px;
+    left: 99px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#estrella2 {
+    top: 20px;
+    left: 226px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#estrella3 {
+    top: 122px;
+    left: 286px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#estrella4 {
+    top: 225px;
+    left: 226px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#estrella5 {
+    top: 225px;
+    left: 99px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}
+
+#estrella6 {
+    top: 122px;
+    left: 34px;
+    width: 25%; /* Tamaño reducido para el saco */
+    height: auto;
+    position: absolute;
+}

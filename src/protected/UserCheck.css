@@ -1,0 +1,144 @@
+.table-header {
+    width: 100%;
+  }
+  
+.volver {
+    text-align: left;
+  }
+  
+.user-info {
+    text-align: right;
+  }
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #F2E6C9;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px; 
+  }
+
+.button-rojo button {
+  background-color: #A93639 ;
+  border: 2px solid #F2E6C9;
+  color: white;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+
+.button-cafe button {
+  color: white;
+}
+
+.logout button {
+  color: white;
+  background-color: #56597c;
+  border-color: #787B93;
+}
+
+.logout button:hover {
+  background-color: #787B93;
+}
+
+a:hover {
+    color: #F2E6C9;
+  }
+
+h2 {
+    background-color: #F2E6C9;
+    color: #38375C;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.leaderboard-table {
+    max-width: 80%;
+    margin: 15px auto;
+    border-spacing: 0;
+    border-radius: 600px;
+}
+
+.leaderboard-table thead {
+    color: #F2E6C9;
+    background-color: #56597C;
+}
+
+.leaderboard-table tbody {
+    color: white;
+    background-color: #787B93;
+    font-weight: bold;
+}
+
+.rank {
+    background-color: #56597C;
+    width: 20%;
+}
+  
+/* Estilos para el pop-up */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  background-color: #56597C;
+  padding: 20px;
+  border: 2px solid #FFFFFF;
+  width: 80%;
+  max-width: 450px;
+  text-align: center;
+  border-radius: 12px;
+}
+.modal-content h2 {
+  background-color: #56597C;
+  color: white
+}
+.modal-content p {
+  text-align: center;
+}
+.modal-content button {
+  color: white;
+  border-radius: 15px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+} 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tablero {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}

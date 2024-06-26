@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us-table {
+    width: 100%; /* O cualquier ancho que prefieras para la tabla completa */
+    table-layout: fixed; /* Esto hace que el ancho de las columnas se respete según el ancho que especifiques */
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.about-us-table th,
+.about-us-table td {
+    padding: 10px; /* Añade padding para dar más espacio dentro de cada celda */
+    text-align: center; /* Ajusta según tu preferencia */
+}
+
+.domi, .rodri, .romi {
+    background-color: #787b93;
+    border-radius: 12px;
+}

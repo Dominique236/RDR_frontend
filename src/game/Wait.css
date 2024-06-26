@@ -1,0 +1,74 @@
+.table-header {
+    width: 100%;
+  }
+  
+.user-info {
+    text-align: right;
+  }
+
+.button {
+  background-color: #A93639;  
+  
+    color: #FFFFFF;
+}
+
+.button:hover {
+    background-color: #A93639;
+}
+
+a:hover {
+    color: #F2E6C9;
+  }
+
+h2 {
+    background-color: #F2E6C9;
+    color: #38375C;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.circle-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+.circle {
+    width: 180px;
+    height: 180px;
+    background-color: #F2E6C9;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.circle-vacio {
+  width: 180px;
+  height: 180px;
+  background-color: #787B93;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.circle-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px; /* Ajusta este valor según sea necesario */
+  height: 150px; /* Ajusta este valor según sea necesario */
+  transform: translate(-50%, -50%);
+}
+.player-name {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.count {
+    text-align: center;
+}

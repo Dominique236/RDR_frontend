@@ -1,0 +1,96 @@
+.arcanos-table {
+    max-width: 60%;
+    margin: 15px auto;
+    border-spacing: 0;
+    background-color: #56597c;
+}
+
+.fila-arcano {
+    border: 3px solid #dddddd; /* Define el color y grosor del borde */
+    text-align: center; /* Centra el texto en las celdas */
+    padding: 8px; /* Añade un poco de espacio interior en las celdas */
+}
+
+.nombre-arcano {
+    font-size: 25px; 
+    font-weight: bold;
+    text-align: center; 
+}
+
+.button {
+    background-color: #CAC1B0;
+    color: #FFFFFF;
+}
+
+.button:hover {
+    background-color: #A93639;
+}
+
+.foto-Volt {
+    height: 175px;
+    width:auto;
+    will-change: filter;
+    transition: filter 300ms;
+    margin-top: 20px; 
+}
+
+.foto-Volt:hover, .foto-Volt.selected {
+    filter: drop-shadow(0 0 2em #EAE961);
+}
+
+.foto-Aero {
+    height: 175px;
+    width:auto;
+    will-change: filter;
+    transition: filter 300ms;
+    margin-top: 20px; 
+}
+
+.foto-Aero:hover, .foto-Aero.selected {
+    filter: drop-shadow(0 0 2em #5DC1B9);
+}
+
+.foto-Pyra {
+    height: 175px;
+    width:auto;
+    will-change: filter;
+    transition: filter 300ms;
+    margin-top: 20px; 
+}
+
+.foto-Pyra:hover, .foto-Pyra.selected {
+    filter: drop-shadow(0 0 2em #FF6F6F);
+}
+
+.foto-Terran {
+    height: 175px;
+    width:auto;
+    will-change: filter;
+    transition: filter 300ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+}
+
+.foto-Terran:hover, .foto-Terran.selected {
+    filter: drop-shadow(0 0 2em #907761);
+}
+
+.arcano-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.arcano-wrapper .overlay {
+    position: absolute; 
+    top: -7px;
+    left: -8px;
+    width: 108%;
+    height: 106%;
+    background-color: rgba(120, 123, 147, 0.5);
+}
+
+.no-disponible img {
+    opacity: 0.28; /*cambiar segub lo que queremos*/
+}

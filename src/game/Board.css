@@ -1,0 +1,195 @@
+.board {
+    display: table;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.body {
+    background-color: #fff;
+}
+
+.button-habilidad {
+    background-color: #787b93;
+    border-color: #787b93;
+    cursor: default;
+}
+
+.button-habilidad:hover {
+    background-color: #787b93;
+    border-color: #787b93;
+}
+
+.disponible {
+    background-color: #A93639;
+    cursor: pointer;
+}
+
+.disponible:hover {
+    background-color: #A93639;
+}
+
+.columna-button-habilidad {
+    display: table-cell; /* Asegura que siga comportándose como una celda de tabla */
+    vertical-align: top; /* Alinea el contenido al principio de la celda */
+    height: 50vh; /* Ocupa toda la altura de la ventana */
+}
+
+.habilidad-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    height: 100%; /* Ocupa toda la altura disponible */
+    width: 125px; 
+}
+
+.dado-movimientos, .mensaje-movimiento {
+    align-self: flex-center; /* Alinea el elemento al inicio */
+}
+
+.button-container {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: flex-center; /* Alinea el elemento al final */
+    margin: 0 auto;
+}
+
+.button-habilidad, .button-dado {
+    display: block;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+.estructura-tablero-info-personajes {
+    width: 100%; /* O cualquier ancho que prefieras para la tabla completa */
+    table-layout: fixed; /*Esto hace que el ancho de las columnas se respete según el ancho que especifiques*/
+}
+
+.estructura-tablero-info-personajes td {
+    padding: 5px; /* Ajusta el padding según lo necesario */
+}
+
+.columna-button-habilidad {
+    width: 100px; /* Ajusta este valor según lo necesites */
+}
+
+.casillas-columna {
+    width: 850px; /* Ajusta este valor según lo necesites */
+}
+
+.info {
+    width: 280px; /* Ajusta este valor según lo necesites */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px; /* Ajusta según sea necesario para más espacio */
+}
+
+.info p {
+    text-align: center;
+    margin: 80px 0; /* Espaciado superior e inferior para el párrafo */
+}
+
+td.info {
+    padding-right: 55px; /* Espacio entre el contenido y el borde derecho */
+}
+
+.mazo-container {
+    display: flex;
+    width: 1250px;
+    align-items: center; /* Alinea verticalmente */
+    text-align: center; /* Centra el texto */
+    margin-top: 25px;
+}
+
+/* Estilos para el pop-up */
+.ending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    display:inline-flex;
+  }
+  .ending-content {
+    background-color: #F2E6C9;
+    padding: 30px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 8px 12px 8px 8px rgba(0.5,0.5,0.5,0.5);
+  }
+  .ending-div-grande {
+    padding: 5px;
+    height: 150px;
+    background-color: #CAC1B0;
+    border-radius: 12px;
+  }
+  
+  .ending-content h1 {
+    color: #38375C;
+    
+    text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+  }
+  .ending-div {
+    margin-top: 2px;
+    text-align: center;
+    color: #38375C;
+    background-color: #CAC1B0;
+  }
+  .ending-content button {
+    margin-top: 15px;
+    background-color: #56597C;
+    color: white;
+    border-color: #56597C;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+  }
+
+  .estrellas-container { 
+    align-items: center;
+    display:inline-flex;
+}
+
+.estrella {
+    height: 40px;
+    padding: 0.3em;
+}
+
+.habilidad {
+    background-color: #CAC1B0;
+    color: #38375C;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.dado-movimientos {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mensaje-movimiento {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.casillas-columna {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
