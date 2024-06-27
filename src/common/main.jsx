@@ -4,15 +4,15 @@ import './index.css'
 import Routing from './Routing'
 import AuthProvider from '../auth/AuthProvider'
 import WaitProvider from '../wait/WaitProvider'
-import FightProvider from '../fight/FightProvider'
+// import FightProvider from '../fight/FightProvider'
 
 ReactDOM.createRoot(document.getElementById('root')).render(  
   <React.StrictMode>
     <AuthProvider>
       <WaitProvider>
-        <FightProvider>
+        {/* <FightProvider> */}
           <Routing />
-        </FightProvider>
+        {/* </FightProvider> */}
       </WaitProvider>
     </AuthProvider>
   </React.StrictMode>,

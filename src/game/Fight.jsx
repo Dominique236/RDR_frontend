@@ -22,13 +22,13 @@ export default function Fight() {
         });
     
     // oponente = id (jugador) del oponente   
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/jugadores/find/${nombre}/${oponente}`)
-        .then((response) => {
-            setPlayers_info(response.data.oponente)
-            setJugador_info(response.data.jugador)
-        }).catch((error) => {
-            console.log(error);
-        });
+    // axios.get(`${import.meta.env.VITE_BACKEND_URL}/jugadores/find/${nombre}/${oponente}`)
+    //     .then((response) => {
+    //         setPlayers_info(response.data.oponente)
+    //         setJugador_info(response.data.jugador)
+    //     }).catch((error) => {
+    //         console.log(error);
+    //     });
     
     
     return (
