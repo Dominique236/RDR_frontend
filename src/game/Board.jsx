@@ -70,11 +70,11 @@ export default function Board() {
                 console.log('Respuesta casillas actual:', casilla_ac);
                 setJugador(response.data.jugador)
                 // hay un jugador en alguna casilla adyacente
-                // if (response.data.casillas_adyacentes[0].jugadorEnCasilla != null) {
-                //     console.log("COMBATE");
-                //     setOponente(response.data.casillas_adyacentes[0].jugadorEnCasilla.id)
-                //     window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
-                // }
+                if (response.data.casillas_adyacentes[0].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[0].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
                 if (response.data.casillas_adyacentes[1].jugadorEnCasilla != null) {
                     console.log("COMBATE");
                     setOponente(response.data.casillas_adyacentes[1].jugadorEnCasilla.id)
@@ -100,12 +100,6 @@ export default function Board() {
                     setOponente(response.data.casillas_adyacentes[5].jugadorEnCasilla.id)
                     window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
                 }
-                if (response.data.casillas_adyacentes[6].jugadorEnCasilla != null) {
-                    console.log("COMBATE");
-                    setOponente(response.data.casillas_adyacentes[6].jugadorEnCasilla.id)
-                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
-                }
-
 
             }).catch((error) => {
                 console.log(error);
