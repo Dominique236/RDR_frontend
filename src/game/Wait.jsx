@@ -2,6 +2,7 @@ import React, { useEffect, useState , useContext} from 'react';
 import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
 import { WaitContext } from '../wait/WaitContext';
+import { useNavigate } from 'react-router-dom';
 import './Wait.css'
 
 export default function Wait() { 
@@ -13,6 +14,7 @@ export default function Wait() {
   const [partida, setPartida] = useState(null);
   const [usuarios, setUsuarios] = useState([]);
   const { selectedOption, selectedTablero, codigo, setCodigo, turnos, setTurnos } = useContext(WaitContext);
+  const navigate = useNavigate();
 
   console.log("Valor actual de selectedOption:", selectedOption);
   console.log("Valor actual de selectedTablero:", selectedTablero);
@@ -87,7 +89,8 @@ export default function Wait() {
               clearInterval(intervalId);
               setTurnos(response.data.turnos);
               console.log("Partida encontrada. Turnos", response.data.turnos);
-              window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
+              // window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
+              navigate('/choose');
             }
           })
           .catch(error => {
