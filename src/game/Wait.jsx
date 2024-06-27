@@ -129,7 +129,7 @@ export default function Wait() {
             console.log("Partida creada. Turnos", response.data.turnos);
             setPartida(response.data.partida.id);
             setTurnos(response.data.turnos);
-            window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
+            // window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
         })
         .catch(error => {
             console.error('Error creando partida:', error);
@@ -205,7 +205,9 @@ export default function Wait() {
 
         <div className="choose-button">
             {isLoggedIn && 
+                <a href='/choose'>
                 <button className='button' onClick={handleCreatePartida}>Comenzar partida</button>
+                </a>
             }
         </div>
         <br></br>
