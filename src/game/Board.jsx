@@ -305,7 +305,7 @@ export default function Board() {
                             <h1>¡Game Over!</h1>
                             <div className='estrellas-container'>   
                                 <h2>Ganador: { ganador } </h2>
-                                <img src="./public/assets/imgs/estrella.png" className="estrella" alt="Estrella" /><h2>4</h2>
+                                <img src="/assets/imgs/estrella.png" className="estrella" alt="Estrella" /><h2>4</h2>
                             </div>
                             
                             <div className='ending-div-grande'>
@@ -314,7 +314,7 @@ export default function Board() {
                                     <tr>
                                         <td>
                                             <div className='estrellas-container'>
-                                                <img src="./public/assets/imgs/estrella.png" className="estrella" alt="Estrella" />
+                                                <img src="/assets/imgs/estrella.png" className="estrella" alt="Estrella" />
                                                 <h2 className='ending-div'>{jugador_info.estrellas}</h2>
                                             </div>
                                         </td>

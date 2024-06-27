@@ -171,7 +171,7 @@ const Choose = () => {
                                                             <tr>
                                                                 <td>
                                                                     <img 
-                                                                        src={`./public/assets/imgs/${arcano.nombre}.png`}
+                                                                        src={`/assets/imgs/${arcano.nombre}.png`}
                                                                         className={`foto-${arcano.nombre} ${selectedArcano && selectedArcano.id === arcano.id ? 'selected' : ''}`}
                                                                         alt={arcano.nombre}
                                                                     />
