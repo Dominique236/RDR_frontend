@@ -6,6 +6,7 @@ import axios from 'axios';
 import PlayerInfo from './PlayerInfo';
 import Mazo from './Mazo';
 import { WaitContext } from '../wait/WaitContext';
+import { FightContext } from '../fight/FightContext';
 
 export default function Board() {
     const { nombre } = useContext(AuthContext)
@@ -26,6 +27,7 @@ export default function Board() {
     const [actualizar, setActualizar] = useState(true); // Usar un estado para manejar si se debe actualizar o no
     const [showChooseOponente, setShowChooseOponente] = useState(false); // Visibilidad del pop-up de habilidad especial
     const [selectedOponent, setSelectedOponent] = useState("");
+    const { oponente, setOponente } = useContext(FightContext);
 
     const fetchData = () => {
         // obtenemos la info de todos los jugadores de esta partida
@@ -67,6 +69,44 @@ export default function Board() {
                 console.log('Variable casillas:', casillas_ad);
                 console.log('Respuesta casillas actual:', casilla_ac);
                 setJugador(response.data.jugador)
+                // hay un jugador en alguna casilla adyacente
+                if (response.data.casillas_adyacentes[0].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[0].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+                if (response.data.casillas_adyacentes[1].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[1].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+                if (response.data.casillas_adyacentes[2].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[2].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+                if (response.data.casillas_adyacentes[3].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[3].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+                if (response.data.casillas_adyacentes[4].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[4].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+                if (response.data.casillas_adyacentes[5].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[5].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+                if (response.data.casillas_adyacentes[6].jugadorEnCasilla != null) {
+                    console.log("COMBATE");
+                    setOponente(response.data.casillas_adyacentes[6].jugadorEnCasilla.id)
+                    window.location.href = `${import.meta.env.VITE_BACKEND_URL}/fight`;
+                }
+
+
             }).catch((error) => {
                 console.log(error);
             });
@@ -305,7 +345,7 @@ export default function Board() {
                             <h1>¡Game Over!</h1>
                             <div className='estrellas-container'>   
                                 <h2>Ganador: { ganador } </h2>
-                                <img src="/assets/imgs/estrella.png" className="estrella" alt="Estrella" /><h2>4</h2>
+                                <img src="./assets/imgs/estrella.png" className="estrella" alt="Estrella" /><h2>4</h2>
                             </div>
                             
                             <div className='ending-div-grande'>
@@ -314,7 +354,7 @@ export default function Board() {
                                     <tr>
                                         <td>
                                             <div className='estrellas-container'>
-                                                <img src="/assets/imgs/estrella.png" className="estrella" alt="Estrella" />
+                                                <img src="./assets/imgs/estrella.png" className="estrella" alt="Estrella" />
                                                 <h2 className='ending-div'>{jugador_info.estrellas}</h2>
                                             </div>
                                         </td>

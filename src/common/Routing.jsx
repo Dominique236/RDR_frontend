@@ -9,6 +9,7 @@ import AdminCheck from '../protected/AdminCheck'
 import UserCheck from '../protected/UserCheck'
 import Wait from '../game/Wait'
 import Choose from '../game/Choose'
+import Fight from '../game/Fight'
 
 function Routing() {
     return (
@@ -25,6 +26,7 @@ function Routing() {
                 <Route path={"/usercheck"} element={<UserCheck />}/>
                 <Route path={"/wait"} element={<Wait />}/>
                 <Route path={"/choose"} element={<Choose />}/>
+                <Route path={"/fight"} element={<Fight />}/>
 
             </Routes>  
         </BrowserRouter>

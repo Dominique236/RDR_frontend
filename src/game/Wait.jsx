@@ -184,10 +184,10 @@ export default function Wait() {
                 {usuarios.map((usuario, index) => (
                     <td key={index}>
                       {/* <div className="circle"></div>
-                      <img src={`/assets/imgs/Default.png`} ></img> */}
+                      <img src={`./assets/imgs/Default.png`} ></img> */}
                       <div className="circle-container">
                         <div className="circle"></div>
-                        <img src={`/assets/imgs/Default.png`} className="circle-image"></img>
+                        <img src={`./assets/imgs/Default.png`} className="circle-image"></img>
                       </div>
                       <div className="player-name">{usuario}</div>
                     </td>

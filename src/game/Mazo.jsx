@@ -20,7 +20,7 @@ export default function Mazo({ jugador_info, nombre_arcano, nombre_jugador, estr
                         />
                       ) : (
                         <div className="carta-default-container">
-                          <img id='imagen' src={`/assets/imgs/default_carta.png`} className="carta-default-arcano"/>
+                          <img id='imagen' src={`./assets/imgs/default_carta.png`} className="carta-default-arcano"/>
                         </div>
                       )}
                     </td>
@@ -33,12 +33,12 @@ export default function Mazo({ jugador_info, nombre_arcano, nombre_jugador, estr
               </td>
               <td className="mazo-player-info-container">
                 <div className="mazo-arcano-container">
-                  <img src={`/assets/imgs/${nombre_arcano}.png`} className="mazo-arcano" />
+                  <img src={`./assets/imgs/${nombre_arcano}.png`} className="mazo-arcano" />
                 </div>
                 <div className="mazo-player-details">
                   <div className="mazo-nombre">{nombre_jugador}</div>
                   <div className="mazo-estrellas-container">
-                    <img src="/assets/imgs/estrella.png" className="mazo-estrella" alt="Estrella" />
+                    <img src="./assets/imgs/estrella.png" className="mazo-estrella" alt="Estrella" />
                     <span className='mazo-estrellas'>{estrellas}</span>
                   </div>
                   <div className='mazo-vidas'>Vidas: {vidas}</div>
