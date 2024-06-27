@@ -179,11 +179,11 @@ export default function UserCheck() {
               <p>Selecciona el tablero que quieres usar en esta partida</p>
               <form className="grid-container">
                 <div className="grid-item">
-                  <img className='tablero' id='tablero-rapido' src={`./public/assets/imgs/tablero1.png`} alt='Tablero rapido'/>
+                  <img className='tablero' id='tablero-rapido' src={`/public/assets/imgs/tablero1.png`} alt='Tablero rapido'/>
                   <input type="radio" name="players" value="1" onChange={() => setSelectedTablero("1")} /> Tablero Rapido
                 </div>
                 <div className="grid-item">
-                  <img className='tablero' id='tablero-rodri' src={`./public/assets/imgs/tablero3.png`} alt='Tablero rodri'/>
+                  <img className='tablero' id='tablero-rodri' src={`/assets/imgs/tablero3.png`} alt='Tablero rodri'/>
                   <input type="radio" name="players" value="2" onChange={() => setSelectedTablero("2")} /> Tablero Rombo
                 </div>
                 <div className="grid-item">
