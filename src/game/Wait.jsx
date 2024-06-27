@@ -2,12 +2,9 @@ import React, { useEffect, useState , useContext} from 'react';
 import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
 import { WaitContext } from '../wait/WaitContext';
-import { useNavigate } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
 import './Wait.css'
 
 export default function Wait() { 
-  const history = useHistory();
   const { token, nombre } = useContext(AuthContext)
   const [status, setStatus] = useState(null);
   const [codigoCreado, setCodigoCreado] = useState(null);
@@ -16,7 +13,7 @@ export default function Wait() {
   const [partida, setPartida] = useState(null);
   const [usuarios, setUsuarios] = useState([]);
   const { selectedOption, selectedTablero, codigo, setCodigo, turnos, setTurnos } = useContext(WaitContext);
-  const navigate = useNavigate();
+
 
   console.log("Valor actual de selectedOption:", selectedOption);
   console.log("Valor actual de selectedTablero:", selectedTablero);
@@ -92,8 +89,17 @@ export default function Wait() {
               setTurnos(response.data.turnos);
               console.log("Partida encontrada. Turnos", response.data.turnos);
               // window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
-              history.push('/choose');
-            }
+              const currentURL = window.location.href;
+              const url = new URL(currentURL);
+              let newPathname = url.pathname.replace('/wait', '/choose');
+              if (!url.pathname.includes('/wait')) {
+                console.warn('El segmento /wait no existe en la URL actual');
+              } else {
+                  // 4. Asignar el nuevo pathname al objeto URL
+                  url.pathname = newPathname;
+                  window.location.href = url.toString();
+                }
+              }
           })
           .catch(error => {
             console.error('Error verificando el estado de la partida:', error);
