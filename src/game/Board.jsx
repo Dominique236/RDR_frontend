@@ -39,7 +39,9 @@ export default function Board() {
                 setJugador_info(response.data.jugador)
                 setTurnoActual(response.data.turno)
                 setNombreTurnoActual(response.data.nombre_turno)
-                setGanador(response.data.ganador.nombre)
+                if (response.data.ganador!=null) {
+                    setGanador(response.data.ganador.nombre)
+                }
 
                 // Vuelve a setear turnos si un jugador se quedo sin vidas
                 if (response.data.cambiar_turno) {
