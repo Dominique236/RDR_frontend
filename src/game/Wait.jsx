@@ -87,7 +87,7 @@ export default function Wait() {
               clearInterval(intervalId);
               setTurnos(response.data.turnos);
               console.log("Partida encontrada. Turnos", response.data.turnos);
-              window.location.href = `http://127.0.0.1:5173/choose`;
+              window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
             }
           })
           .catch(error => {
@@ -129,7 +129,7 @@ export default function Wait() {
             console.log("Partida creada. Turnos", response.data.turnos);
             setPartida(response.data.partida.id);
             setTurnos(response.data.turnos);
-            window.location.href = `http://127.0.0.1:5173/choose`;
+            window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
         })
         .catch(error => {
             console.error('Error creando partida:', error);
@@ -184,10 +184,10 @@ export default function Wait() {
                 {usuarios.map((usuario, index) => (
                     <td key={index}>
                       {/* <div className="circle"></div>
-                      <img src={`./src/assets/imgs/Default.png`} ></img> */}
+                      <img src={`./public/assets/imgs/Default.png`} ></img> */}
                       <div className="circle-container">
                         <div className="circle"></div>
-                        <img src={`./src/assets/imgs/Default.png`} className="circle-image"></img>
+                        <img src={`./public/assets/imgs/Default.png`} className="circle-image"></img>
                       </div>
                       <div className="player-name">{usuario}</div>
                     </td>

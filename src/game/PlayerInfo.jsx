@@ -9,13 +9,13 @@ export default function PlayerInfo({nombre, nombre_arcano, estrellas, vidas}){
             <tr>
                 <td>
                     <div>
-                        <img src={`./src/assets/imgs/${nombre_arcano}.png`} className="arcano"></img>
+                        <img src={`./public/assets/imgs/${nombre_arcano}.png`} className="arcano"></img>
                     </div>
                 </td>
                 <td>
                     <div className="nombre">{nombre}</div>
                     <div className="estrellas-container">
-                      <img src="./src/assets/imgs/estrella.png" className="estrella" alt="Estrella" />
+                      <img src="./public/assets/imgs/estrella.png" className="estrella" alt="Estrella" />
                       <span className='estrellas'>{estrellas}</span>
                     </div>
                     <div className='vidas'>Vidas: {vidas}</div>

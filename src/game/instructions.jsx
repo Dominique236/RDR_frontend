@@ -20,7 +20,7 @@ function Instructions() {
             <p>Cartas Elementales: Cada jugador posee cartas enumeradas del 1 al 8 representando los poderosos elementos del juego. ¿Serás capaz de utilizarlas sabiamente para superar a tus rivales?</p>
             <p>Estrategia en cada Movimiento: Elige tus cartas con astucia y anticipa los movimientos de tus oponentes. ¡El laberinto es tu campo de batalla y la estrategia es tu mejor aliada!</p>
             <p>Desafíos Épicos: Enfréntate a tus amigos en emocionantes duelos de cartas y demuestra quién es el verdadero maestro del elemento. ¡Elige tus cartas, ejecuta tus estrategias y reclama la victoria!</p>
-            <img src="./src/assets/imgs/mazo.png" className="mazo"></img>
+            <img src="./public/assets/imgs/mazo.png" className="mazo"></img>
             <br></br>
             <br></br>
             <a href='/'>Volver</a>
