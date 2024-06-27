@@ -3,9 +3,11 @@ import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
 import { WaitContext } from '../wait/WaitContext';
 import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './Wait.css'
 
 export default function Wait() { 
+  const history = useHistory();
   const { token, nombre } = useContext(AuthContext)
   const [status, setStatus] = useState(null);
   const [codigoCreado, setCodigoCreado] = useState(null);
@@ -90,7 +92,7 @@ export default function Wait() {
               setTurnos(response.data.turnos);
               console.log("Partida encontrada. Turnos", response.data.turnos);
               // window.location.href = `${import.meta.env.VITE_BACKEND_URL}/choose`;
-              navigate('/choose');
+              history.push('/choose');
             }
           })
           .catch(error => {
